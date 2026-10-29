@@ -1,0 +1,109 @@
+import Projects from "./Projects";
+
+import card50 from "../../assets/images/portfolio-images/card-50.png";
+
+import card49 from "../../assets/images/portfolio-images/card-49.png";
+import card60 from "../../assets/images/portfolio-images/card-60.png";
+import card61 from "../../assets/images/portfolio-images/card-61.png";
+import card51 from "../../assets/images/portfolio-images/card-51.png";
+import card69 from "../../assets/images/portfolio-images/card-69.png";
+const projectData = [
+    {
+    id: 6,
+    slug: "Fixinit",
+    image: card69,
+    category: "Web Dev + AI",
+    title: "Fixinit",
+    description: "I built a platform that connects businesses with local IT technicians for... ",
+  },
+
+{
+    id: 5,
+    slug: "",
+    image: card61,
+    category: "Web Dev",
+    title: "The Round Table After Dark",
+    description: "I served as lead developer on a horror game...",
+    link: "https://afterdark-game.com",
+  },
+
+  {
+    id: 1,
+    slug: "dashboard",
+    image: card49,
+    category: "Web Dev + BI",
+    title: "Dashboard",
+    description: "I developed a delivery package tracking system...",
+    link: "",
+  },
+
+
+  {
+    id: 2,
+    slug: "",
+    image: card50,
+    category: "Web Dev",
+    title: "Javascript Time Estimator",
+    description: "Since time estimation is crucial...",
+    link: "https://yassine-elamri34.github.io/JavaScript-Final-Project/",
+  },
+  {
+    id: 3,
+    slug: "",
+    image: card51,
+    category: "Web Dev",
+    title: "Web Design Project",
+    description: "I developed a flip memory card game...",
+    link: "https://yassine-elamri34.github.io/Final-Web-Design-Project/",
+  },
+  {
+    id: 4,
+    slug: "",
+    image: card60,
+    category: "Web Dev",
+    title: "Student Life Assistant",
+    description: "I developed a Student Life Assistant...",
+    link: "https://yassine-elamri34.github.io/studentLifeAssistant-Project/",
+  },
+];
+const Portfolio = () => {
+  return (
+    <div
+      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2"
+      id="portfolio"
+    >
+      <div className="xl:mb-17.5 mb-5">
+        <div className="max-sm:px-2 text-center mx-auto max-w-144.25">
+          <p className="section-title ">Portfolio</p>
+          <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
+           Mon portfolio présente l’expérience pratique acquise à travers des projets concrets et mes études. Chaque projet représente un défi unique qui m’a permis de perfectionner mes compétences techniques, analytiques et créatives.
+          </p>
+        </div>
+      </div>
+      <div className="mx-auto flex justify-center">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
+          {projectData.map((data, index) => (
+            <Projects data={data} key={index} />
+          ))}
+        </div>
+      </div>
+      <div className="text-center">
+      <a
+  href="#portfolio"
+  onClick={(e) => {
+    e.preventDefault();
+    document
+      .getElementById("portfolio")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
+>
+  Plus de projets
+</a>
+
+      </div>
+    </div>
+  );
+};
+
+export default Portfolio;
