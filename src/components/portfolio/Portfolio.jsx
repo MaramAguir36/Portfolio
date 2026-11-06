@@ -8,24 +8,24 @@ import card61 from "../../assets/images/portfolio-images/card-61.png";
 import card51 from "../../assets/images/portfolio-images/card-51.png";
 import card69 from "../../assets/images/portfolio-images/card-69.png";
 const projectData = [
-    {
-    id: 6,
-    slug: "Fixinit",
-    image: card69,
-    category: "Web Dev + AI",
-    title: "Fixinit",
-    description: "I built a platform that connects businesses with local IT technicians for... ",
-  },
+  //   {
+  //   id: 6,
+  //   slug: "Fixinit",
+  //   image: card69,
+  //   category: "Web Dev + AI",
+  //   title: "Fixinit",
+  //   description: "I built a platform that connects businesses with local IT technicians for... ",
+  // },
 
-{
-    id: 5,
-    slug: "",
-    image: card61,
-    category: "Web Dev",
-    title: "The Round Table After Dark",
-    description: "I served as lead developer on a horror game...",
-    link: "https://afterdark-game.com",
-  },
+// {
+//     id: 5,
+//     slug: "",
+//     image: card61,
+//     category: "Web Dev",
+//     title: "The Round Table After Dark",
+//     description: "I served as lead developer on a horror game...",
+//     link: "https://afterdark-game.com",
+//   },
 
   {
     id: 1,

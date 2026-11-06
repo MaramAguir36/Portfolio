@@ -118,7 +118,7 @@ const Dashboard = () => {
           </p>
         </section>
 
-        <section>
+        {/* <section>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Download Project Report</h2>
           <p className="text-gray-600 text-[16px] mb-4">
             You can view or download the full PFE project documentation below:
@@ -127,13 +127,13 @@ const Dashboard = () => {
             <FontAwesomeIcon icon={faFilePdf} />
             View PDF Report
           </a>
-        </section>
+        </section> */}
 
       </div>
 
       <footer className="bg-white border-t border-gray-200 py-6 mt-10 text-center">
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Yassine Elamri — All Rights Reserved
+          © {new Date().getFullYear()} Maram Aguir — All Rights Reserved
         </p>
       </footer>
 
